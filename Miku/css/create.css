@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+body {
+  background: #550a47;
+  /* background-image: url(../img/miku.jpg); */
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: scroll;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+.menu{
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	background-color: #550a47;
+	height:40px;
+}
+/* 一级菜单 */
+.menu ul {
+  background-color: #fff;
+  text-align: center;
+}
+/* 二级菜单 */
+.menu ul li ul {
+  display: none;
+  position: absolute;
+  width: 100%;
+  background-color: #550a47;
+}
+.menu ul li ul li {
+  width: 100%;
+}
+/* 三级菜单 */
+.menu ul li ul li ul {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background-color: #550a47;
+}
+.menu li {
+  width: 20%;
+  float: left;
+  position: relative;
+}
+/* 设置超链接 指针悬浮样式 */
+
+/* 鼠标未选中时候的颜色 */
+.menu li:hover > a {
+  background-color: #550a47;
+}
+/* 超链接字体颜色 */
+.menu li a {
+  display: block;
+  color: #ffffff;
+  line-height: 40px;
+}
+/* 鼠标选中的时候 */
+.menu li a:hover {
+  background-color: #FF1493;
+  border-radius: 10px;
+}
+.menu li a:hover + ul {
+  display: block;
+}
+.menu li ul:hover {
+  display: block;
+}
+
+
+.header {
+  background-image: url(../img/indexmiku1.jpg);
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+}
+.header .text {
+  text-align: center;
+}
+
+.text-area {
+  padding-top: 440px;
+}
+
+.text {
+  margin: 0 auto;
+  color: #fff;
+  background-color: #000;
+  opacity: 0.6;
+  padding: 38px;
+}
+.text .title {
+  font-size: 43px;
+  font-weight: bold;
+}
+.foot{
+	margin-top: 10px;
+	padding-top: 20px;
+	width: auto;
+	height: 60px;
+	background-color: #550A47;
+}
+h6{
+	text-align: center;
+	font-size: 10px;
+	color: #F0F0F0;
+}

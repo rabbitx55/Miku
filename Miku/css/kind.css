@@ -1,0 +1,199 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+body {
+  
+  background-image: url(../img/bgmiku.jpg);
+  background-attachment: fixed; 
+  background-size: 100%;
+  background-repeat: repeat;
+ /* background-attachment: scroll; */
+  font-family: "Noto Sans TC", sans-serif;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu{
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	background-color: #550a47;
+	height:40px;
+}
+/* 一级菜单 */
+.menu ul {
+  background-color: #fff;
+  text-align: center;
+}
+/* 二级菜单 */
+.menu ul li ul {
+  display: none;
+  position: absolute;
+  width: 100%;
+  background-color: #550a47;
+}
+.menu ul li ul li {
+  width: 100%;
+}
+/* 三级菜单 */
+.menu ul li ul li ul {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background-color: #550a47;
+}
+.menu li {
+  width: 20%;
+  float: left;
+  position: relative;
+}
+/* 设置超链接 指针悬浮样式 */
+
+/* 鼠标未选中时候的颜色 */
+.menu li:hover > a {
+  background-color: #550a47;
+}
+/* 超链接字体颜色 */
+.menu li a {
+  display: block;
+  color: #ffffff;
+  line-height: 40px;
+}
+/* 鼠标选中的时候 */
+.menu li a:hover {
+  background-color: #FF1493;
+  border-radius: 10px;
+}
+.menu li a:hover + ul {
+  display: block;
+}
+.menu li ul:hover {
+  display: block;
+}
+
+
+.wrap {
+  width: 1200px;
+  margin: 10px auto;
+  background-color: rgb(255, 255, 255,80%) ;
+}
+h1 {
+  color: #000000;
+  text-align: center;
+  border-bottom: 1px solid #fff;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.text {
+  font-weight: 500;
+  padding: 15px;
+  color: #000000;
+}
+
+h2 {
+  color: #4f4f4f;
+  text-align: center;
+  border-bottom: 1px solid #fff;
+  padding: 20px 0;
+  font-size: 20px;
+}
+
+p {
+  padding-top: 10px;
+  line-height: 1.8;
+  font-weight: 300;
+  color: #333;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.navbar {
+  background-color: #333;
+  height: 50px;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.product li {
+  padding: 1em;
+  margin: 1%;
+  float: left;
+  width: 20%;
+  border: 1px solid #8b8b8b;
+  box-shadow: 0 0 5px #a0a0a0;
+  line-height: 1.3;
+  text-align: center;
+}
+
+#newli{
+  padding: 1em;
+  margin: 1%;
+  float: left;
+  width: 45%;
+  border: 1px solid #8b8b8b;
+  box-shadow: 0 0 5px #a0a0a0;
+  line-height: 1.3;
+  text-align: center;	
+}
+.product img{
+	width: 80%;
+	height: auto;
+}
+.product h4 {
+  font-size: 24px;
+  padding: 1em 0;
+  color: #550a47;
+}
+.product .btn {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 60px;
+  color:#550a47;
+  border: 2px solid #7a4c18;
+  background-color: #f3f3f3;
+  font-size: 18px;
+  margin-top: 1em;
+  text-align: center;
+  cursor: pointer;
+}
+.product .btn a{
+	display: block;
+	color: #550a47;
+}
+
+.product .btn a:hover {
+	width: auto;
+  background-color: #550a47;
+  color: #fff;
+  transition: all 0.3s;
+  border-radius: 3px;
+  
+}
+.product .line {
+  border-bottom: 1px solid #333;
+  margin: 1em 0;
+}
+
+
+.foot{
+	margin-top: 10px;
+	padding-top: 20px;
+	width: auto;
+	height: 40px;
+	background-color: #550A47;
+}
+h6{
+	text-align: center;
+	font-size: 10px;
+	color: #F0F0F0;
+}

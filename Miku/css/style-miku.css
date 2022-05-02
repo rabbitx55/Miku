@@ -1,0 +1,255 @@
+.c-hatsuneMiku-container {
+  float: right;
+  padding-top: 100px;
+  padding-right: 80px;
+  position: relative;
+}
+
+.c-hatsuneMiku {
+  width: 670px;
+  height: 1000px;
+  /* overflow: hidden; */
+  position: relative;
+  transform-origin: bottom left; 
+  zoom: 0.5;
+}
+.c-hatsuneMiku div {
+  background-image: url("https://blog.hayu.io/wp-content/uploads/2015/10/39.png");
+}
+
+.c-hatsuneMiku-headWrap {
+  width: 425px;
+  height: 413px;
+  position: absolute;
+  left: 150px;
+}
+
+.c-hatsuneMiku-eyelashes--left, .c-hatsuneMiku-eyelashes--right {
+  width: 61px;
+  height: 17px;
+  background-position: -533px -73px;
+  position: absolute;
+}
+.c-hatsuneMiku-eyelashes--left {
+  transform: scale(-1, 1);
+  top: 175px;
+  left: 80px;
+}
+.c-hatsuneMiku-eyelashes--right {
+  transform: rotate(10deg);
+  top: 194px;
+  left: 254px;
+}
+
+.c-hatsuneMiku-eye--left, .c-hatsuneMiku-eye--right {
+  width: 41px;
+  height: 88px;
+  background-position: -537px -116px;
+  position: absolute;
+  transform-origin: bottom;
+  -webkit-animation: eye infinite 10s cubic-bezier(0, 0.94, 0.49, 0.97);
+          animation: eye infinite 10s cubic-bezier(0, 0.94, 0.49, 0.97);
+}
+.c-hatsuneMiku-eye--left {
+  top: 228px;
+  left: 94px;
+}
+.c-hatsuneMiku-eye--right {
+  top: 241px;
+  left: 240px;
+}
+
+@-webkit-keyframes eye {
+  0% {
+    transform: scaleY(0.1);
+  }
+  5% {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes eye {
+  0% {
+    transform: scaleY(0.1);
+  }
+  5% {
+    transform: scaleY(1);
+  }
+}
+.c-hatsuneMiku-mouth {
+  width: 48px;
+  height: 10px;
+  position: absolute;
+  background-position: -539px -237px;
+  top: 363px;
+  left: 170px;
+}
+
+.c-hatsuneMiku-hair--left, .c-hatsuneMiku-hair--right {
+  -webkit-animation: hair alternate infinite 1s linear;
+          animation: hair alternate infinite 1s linear;
+  position: absolute;
+}
+.c-hatsuneMiku-hair--left {
+  width: 215px;
+  height: 885px;
+  background-position: -624px -2px;
+  top: 70px;
+  left: -142px;
+  transform-origin: top right;
+  z-index: -1;
+}
+.c-hatsuneMiku-hair--right {
+  width: 167px;
+  height: 922px;
+  background-position: -857px -2px;
+  top: 60px;
+  left: 342px;
+  transform-origin: top left;
+  z-index: 10;
+}
+
+@-webkit-keyframes hair {
+  0% {
+    transform: rotateZ(1deg);
+  }
+  100% {
+    transform: rotateZ(-1deg);
+  }
+}
+
+@keyframes hair {
+  0% {
+    transform: rotateZ(1deg);
+  }
+  100% {
+    transform: rotateZ(-1deg);
+  }
+}
+.c-hatsuneMiku-bodyWrap {
+  background: none !important;
+  position: absolute;
+  left: 210px;
+  top: 403px;
+}
+
+.c-hatsuneMiku-body {
+  width: 320px;
+  height: 400px;
+  background-position: 0 515px;
+  position: relative;
+  z-index: 20;
+}
+
+.c-hatsuneMiku-tie {
+  width: 79px;
+  height: 266px;
+  background-position: 598px -140px;
+  top: 33px;
+  position: absolute;
+  left: 114px;
+  transform-origin: 34px 0;
+  -webkit-animation: tie alternate infinite 1s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+          animation: tie alternate infinite 1s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+  z-index: 25;
+}
+
+@-webkit-keyframes tie {
+  0% {
+    transform: rotateZ(-2deg);
+  }
+  100% {
+    transform: rotateZ(2deg);
+  }
+}
+
+@keyframes tie {
+  0% {
+    transform: rotateZ(-2deg);
+  }
+  100% {
+    transform: rotateZ(2deg);
+  }
+}
+.c-hatsuneMiku-arm--left, .c-hatsuneMiku-arm--right {
+  width: 165px;
+  height: 302px;
+  background-position: 705px -419px;
+  position: absolute;
+  transform-origin: 0 0;
+  z-index: 10;
+}
+.c-hatsuneMiku-arm--left {
+  left: 128px;
+  top: 36px;
+  transform: scaleX(-1);
+  -webkit-animation: left-arm alternate infinite 1s linear;
+          animation: left-arm alternate infinite 1s linear;
+}
+.c-hatsuneMiku-arm--right {
+  left: 181px;
+  top: 34px;
+  -webkit-animation: right-arm alternate infinite 1s linear;
+          animation: right-arm alternate infinite 1s linear;
+}
+
+@-webkit-keyframes left-arm {
+  0% {
+    transform: scaleX(-1) rotateZ(-10deg);
+  }
+  100% {
+    transform: scaleX(-1) rotateZ(-20deg);
+  }
+}
+
+@keyframes left-arm {
+  0% {
+    transform: scaleX(-1) rotateZ(-10deg);
+  }
+  100% {
+    transform: scaleX(-1) rotateZ(-20deg);
+  }
+}
+@-webkit-keyframes right-arm {
+  0% {
+    transform: rotateZ(-10deg);
+  }
+  100% {
+    transform: rotateZ(-20deg);
+  }
+}
+@keyframes right-arm {
+  0% {
+    transform: rotateZ(-10deg);
+  }
+  100% {
+    transform: rotateZ(-20deg);
+  }
+}
+.c-hatsuneMiku-foot--left, .c-hatsuneMiku-foot--right {
+  width: 88px;
+  height: 331px;
+  background-position: -491px 510px;
+  position: absolute;
+  z-index: 10;
+  top: 250px;
+}
+.c-hatsuneMiku-foot--left {
+  left: 75px;
+}
+.c-hatsuneMiku-foot--right {
+  left: 145px;
+}
+
+.foot{
+	margin-top: 10px;
+	padding-top: 20px;
+	width: auto;
+	height: 60px;
+	background-color: #550A47;
+}
+h6{
+	text-align: center;
+	font-size: 10px;
+	color: #F0F0F0;
+}

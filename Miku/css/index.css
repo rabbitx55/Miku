@@ -1,0 +1,179 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+body {
+  background: #550a47; 
+  width: 100%;
+  height: auto;
+  background-position: top;
+  background-attachment: scroll;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu{
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	background-color: #550a47;
+	height:40px;
+}
+/* 一级菜单 */
+.menu ul {
+  background-color: #fff;
+  text-align: center;
+}
+/* 二级菜单 */
+.menu ul li ul {
+  display: none;
+  position: absolute;
+  width: 100%;
+  background-color: #550a47;
+}
+.menu ul li ul li {
+  width: 100%;
+}
+/* 三级菜单 */
+.menu ul li ul li ul {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background-color: #550a47;
+}
+.menu li {
+  width: 20%;
+  float: left;
+  position: relative;
+}
+/* 设置超链接 指针悬浮样式 */
+
+/* 鼠标未选中时候的颜色 */
+.menu li:hover > a {
+  background-color: #FF1493;
+}
+/* 超链接字体颜色 */
+.menu li a {
+  display: block;
+  color: #ffffff;
+  line-height: 40px;
+}
+/* 鼠标选中的时候 */
+.menu li a:hover {
+  background-color: #FF1493;
+  border-radius: 10px;
+}
+.menu li a:hover + ul {
+  display: block;
+}
+.menu li ul:hover {
+  display: block;
+}
+
+
+.header {
+  background-image: url(../img/indexmiku1.jpg);
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100%;
+}
+.header .text {
+  text-align: center;
+}
+
+.text-area {
+  padding-top: 440px;
+}
+
+.text {
+  margin: 0 auto;
+  color: #fff;
+  background-color: #000;
+  opacity: 0.6;
+  padding: 38px;
+}
+.text .title {
+  font-size: 43px;
+  font-weight: bold;
+}
+
+
+
+.content {
+  margin-top: 30px;
+}
+.content h2 {
+  font-size: 24px;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  font-family: "宋体";
+}
+
+.content li {
+  width: 20%;
+  margin-right: 1%;
+  margin-left: 1%;
+  float: left;
+  text-align: center;
+}
+.content img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+.content a {
+  text-decoration: none;
+  color: blue;
+}
+.content .line {
+  border-bottom: 1px solid #333;
+  margin: 1em 0;
+}
+
+.foot{
+	margin-top: 10px;
+	padding-top: 20px;
+	width: auto;
+	height: 60px;
+	background-color: #550A47;
+}
+h6{
+	text-align: center;
+	font-size: 10px;
+	color: #F0F0F0;
+}
+/* .slideOne {
+  width: 50px;
+  height: 10px;
+  background: #333;
+  margin: 20px auto;
+  position: relative;
+  border-radius: 50px;
+  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
+}
+.slideOne label {
+  display: block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  cursor: pointer;
+  background: #fcfff4;
+  background: linear-gradient(to bottom, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+  border-radius: 50px;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s ease;
+}
+.slideOne input[type=checkbox] {
+  visibility: hidden;
+}
+.slideOne input[type=checkbox]:checked + label {
+  left: 37px;
+} */
